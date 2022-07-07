@@ -1,5 +1,76 @@
-/* Colors */
+/* Colors
 
-/* :root {
-    --main-color: 
-} */
+background: #E5E5E5;
+accent: #2196F3; 
+black font color: #212121;
+white font color: #FFFFFF;
+grey font color: #757575;
+*/
+
+:root {
+    --main-blackcolor: #212121;
+    --main-backgroundcolor: #E5E5E5;
+    --accent-color: #2196F3;
+    --white-fontcolor: #FFFFFF;
+    --grey-fontcolor: #757575;
+} 
+
+body {
+    color: var(--main-blackcolor);
+    background-color: var(--main-backgroundcolor);
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+text-decoration: none;
+}
+
+/*Site nav*/
+.logo {
+    color: #000000;
+}
+
+.logo > span {
+    color: var(--accent-color);
+} 
+
+.site-nav .link,
+.contacts .link {
+    color: var(--main-blackcolor);
+}
+
+.site-nav .link:hover,
+.contacts .link:hover,
+.site-nav .link:focus,
+.contacts .link:focus {
+    color: var(--accent-color);
+}
+
+/*Hero*/
+.hero {
+color:#FFFFFF;
+background: #2F303A;
+}
+
+/*Section*/
+
+.section-title {
+    color: var(--main-blackcolor);
+}
+
+/*Feature*/
+.feature .title {
+    color: var(--main-blackcolor);
+}
+
+/*Our team*/
+.team .name {
+    color: var(--main-blackcolor);
+}
+
+.team .position {
+    color: #757575;
+}
