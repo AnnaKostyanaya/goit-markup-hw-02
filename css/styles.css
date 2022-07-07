@@ -18,6 +18,7 @@ grey font color: #757575;
 body {
     color: var(--main-blackcolor);
     background-color: var(--main-backgroundcolor);
+    font-family: sans-serif;
 }
 
 .list {
@@ -73,4 +74,22 @@ background: #2F303A;
 
 .team .position {
     color: #757575;
+}
+
+/* Button */
+.button {
+    color: var(--white-fontcolor);
+    background-color: var(--accent-color);
+}
+
+
+.button-portfolio {
+    color: var(--main-blackcolor);
+    background-color: #F5F4FA;
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+    color: var(--white-fontcolor);
+    background-color: var(--accent-color);
 }
