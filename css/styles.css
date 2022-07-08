@@ -18,7 +18,7 @@ grey font color: #757575;
 body {
     color: var(--main-blackcolor);
     background-color: var(--main-backgroundcolor);
-    font-family: Roboto, Serif;
+    font-family: Roboto, Sans-serif;
     font-weight: 400;
     letter-spacing: 0.03em;
 }
@@ -58,6 +58,10 @@ text-decoration: none;
 .contacts .link:hover,
 .site-nav .link:focus,
 .contacts .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
     color: var(--accent-color);
 }
 
