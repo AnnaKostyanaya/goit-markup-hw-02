@@ -10,11 +10,13 @@ grey font color: #757575;
 :root {
     --main-blackcolor: #212121;
     --main-backgroundcolor: #E5E5E5;
-    --alt-background: #F5F4FA;
+    --second-white-background: #F5F4FA;
     --accent-background: #2F303A;
     --accent-color: #2196F3;
+    --accent-color-hover: #188CE8;
     --white-fontcolor: #FFFFFF;
     --grey-fontcolor: #757575;
+    --black-logo-color: #000000;
 } 
 
 body {
@@ -35,7 +37,7 @@ text-decoration: none;
 
 /*Site nav*/
 .logo {
-    color: #000000;
+    color: var(--black-logo-color);
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -48,8 +50,7 @@ text-decoration: none;
 
 .site-nav .link,
 .contacts .link {
-    color: var(--main-blackcolor);
-    font-family: 'Roboto';
+    color: inherit;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -82,7 +83,6 @@ text-transform: uppercase;
 /*Section*/
 
 .section-title {
-    color: var(--main-blackcolor);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -104,7 +104,6 @@ text-transform: uppercase;
 }
 
 .feature .title {
-    color: var(--main-blackcolor);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -117,12 +116,15 @@ text-transform: uppercase;
 }
 
 /*Our team*/
-.team .name {
+/* .team .name {
     color: var(--main-blackcolor);
+}  */
+.section.team {
+    background-color: var(--second-white-background);
 }
 
 .team .position {
-    color: #757575;
+    color: var(--grey-fontcolor);
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -174,10 +176,16 @@ address {
     letter-spacing: 0.06em;
 }
 
+.button:hover,
+.button:focus {
+    color: var(--white-fontcolor);
+    background-color: var(--accent-color-hover);
+}
+
 /* Portfolio */
 .button-portfolio {
     color: var(--main-blackcolor);
-    background-color: #F5F4FA;
+    background-color: var(--second-white-background);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
