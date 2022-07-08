@@ -10,6 +10,8 @@ grey font color: #757575;
 :root {
     --main-blackcolor: #212121;
     --main-backgroundcolor: #E5E5E5;
+    --alt-background: #F5F4FA;
+    --accent-background: #2F303A;
     --accent-color: #2196F3;
     --white-fontcolor: #FFFFFF;
     --grey-fontcolor: #757575;
@@ -18,7 +20,7 @@ grey font color: #757575;
 body {
     color: var(--main-blackcolor);
     background-color: var(--main-backgroundcolor);
-    font-family: Roboto, Sans-serif;
+    font-family: "Roboto", "Tahoma", sans-serif;
     font-weight: 400;
     letter-spacing: 0.03em;
 }
@@ -67,8 +69,8 @@ text-decoration: none;
 
 /*Hero*/
 .hero {
-color:#FFFFFF;
-background: #2F303A;
+color: var(--white-fontcolor);
+background: var(--accent-background);
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -81,9 +83,26 @@ text-transform: uppercase;
 
 .section-title {
     color: var(--main-blackcolor);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
 }
 
 /*Feature*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .feature .title {
     color: var(--main-blackcolor);
     font-weight: 700;
@@ -117,7 +136,7 @@ text-transform: uppercase;
 }
 /* Footer */
 .footer {
-    background-color: #2F303A;
+    background-color: var(--accent-background);
     color: var(--white-fontcolor);
 }
 
@@ -129,6 +148,11 @@ text-transform: uppercase;
     color: rgba(255, 255, 255, 0.6);
 }
 
+.list .address:hover,
+.list .address:focus {
+    color: var(--accent-color);
+}
+
 /* Address */
 address {
     font-size: 14px;
@@ -136,12 +160,6 @@ address {
     font-style: normal;
 }
 
-h2 {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-}
 
 /* Button */
 .button {
