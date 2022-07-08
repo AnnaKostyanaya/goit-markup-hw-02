@@ -23,7 +23,7 @@ body {
     color: var(--main-blackcolor);
     background-color: var(--main-backgroundcolor);
     font-family: "Roboto", "Tahoma", sans-serif;
-    font-weight: 400;
+    font-size: 14px;
     letter-spacing: 0.03em;
 }
 
@@ -52,7 +52,6 @@ text-decoration: none;
 .contacts .link {
     color: inherit;
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
@@ -105,13 +104,11 @@ text-transform: uppercase;
 
 .feature .title {
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
 
 .feature-description {
-    font-size: 14px;
     line-height: 1.7;
 }
 
@@ -157,7 +154,6 @@ text-transform: uppercase;
 
 /* Address */
 address {
-    font-size: 14px;
     line-height: 1.71;
     font-style: normal;
 }
